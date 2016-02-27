@@ -16,7 +16,7 @@ https://github.com/scylladb/seastar/blob/master/doc/tutorial.md
 If you got stuck and cannot find an answer anywhere, feel free to contact other
 Seastar developers at Seastar mailing list: seastar-dev@googlegroups.com
 
-This repository contains a simple Seastar program that will asynchronously
+This repository contains a simple example program that will asynchronously
 sleep for one second and print hello world. Other example programs may be
 included in the future.
 
