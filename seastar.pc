@@ -1,0 +1,7 @@
+Name: Seastar
+URL: http://seastar-project.org/
+Description: Advanced C++ framework for high-performance server applications on modern hardware.
+Version: 1.0
+Libs: -L. -Wl,--whole-archive,-lseastar,--no-whole-archive -g -Wl,--no-as-needed   -fvisibility=hidden -pthread   -laio -lboost_program_options -lboost_system -lboost_filesystem -lstdc++ -lm -lboost_unit_test_framework -lboost_thread -lcryptopp -lrt -lgnutls -lgnutlsxx -lhwloc -lnuma -lpciaccess -lxml2 -lz
+Cflags: -std=gnu++1y -g  -Wall -Werror -fvisibility=hidden -pthread -I./seastar -march=nehalem -Wno-overloaded-virtual -DHAVE_HWLOC -DHAVE_NUMA  -O2
+
