@@ -1,6 +1,8 @@
 Play With Seastar
 =======
 
+NOTE: Play With Seastar will actually not work well because libseastar.a has dependencies that are very specific to the environment it was built. For example, libseastar.a shipped with Play With Seastar was built on Fedora, so it's unlikely that Play With Seastar will work on Ubuntu or even Fedora depending on its version. So it's recommended that you go to Seastar's official repository, and build it by yourself. I will try to later come up with a fast way of playing with Seastar that works for everyone.
+
 Introduction
 ------------
 
@@ -26,11 +28,6 @@ Building Play With Seastar
 Installing required packages on Fedora 21 and later:
 ```
 yum install gcc-c++ libaio-devel ragel hwloc-devel numactl-devel libpciaccess-devel cryptopp-devel xen-devel boost-devel libxml2-devel xfsprogs-devel gnutls-devel
-```
-
-Installing required packages on Ubuntu 14.04:
-```
-sudo apt-get install libaio-dev ragel libhwloc-dev libnuma-dev libpciaccess-dev libcrypto++-dev libboost-all-dev libxen-dev libxml2-dev xfslibs-dev
 ```
 
 Build example program(s):
